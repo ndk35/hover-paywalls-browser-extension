@@ -85,7 +85,7 @@ function bypassPaywalls(details) {
 //Add listener to bypassPaywalls if on blacklist
 chrome.webRequest.onBeforeSendHeaders.addListener(bypassPaywalls, {
   urls: ["<all_urls>"],
-  types: ["main_frame"], }, 
+  types: ["main_frame"] }, 
   ["requestHeaders", "blocking", "extraHeaders"]
 );
 
